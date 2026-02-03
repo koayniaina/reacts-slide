@@ -1,0 +1,43 @@
+.program img {
+  width: 100%;
+  border-radius: 10px;
+  display: block;
+}
+
+.program{
+    flex-basis: 30%;
+    position: relative;
+}
+.programs {
+  text-align: center;
+  margin: 3rem auto 3rem;
+  width: 90%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 1rem auto;
+}
+
+.capiton{
+    position: absolute;
+    top: 0;
+    right: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: white;
+    left: 0;
+     border-radius: 10px;
+    cursor: pointer;
+    background-color: rgba(0, 15, 152, 0.61);
+    bottom: 0;
+    opacity: 0;
+    padding-top: 70%;
+    transition: .4s;
+}
+
+.program:hover .capiton{
+    opacity: 1;
+    padding-top: 0;
+}

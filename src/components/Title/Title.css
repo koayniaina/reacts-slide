@@ -1,0 +1,15 @@
+.title{
+    margin: 2rem auto 2rem;
+   text-align: center;
+}
+
+.title h2{
+    font-size: .8rem;
+    text-transform: uppercase;
+    color: rgb(0, 15, 152);
+}
+
+.title p{
+    font-size: 1.7rem;
+    font-weight: bold;
+}

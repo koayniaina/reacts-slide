@@ -1,0 +1,29 @@
+.hero{
+    width: 100%;
+    min-height: 100vh;
+    /* background-position: top; */
+    background-size: cover;
+    /* background-repeat: no-repeat; */
+    background-image: linear-gradient(rgba(8, 0, 58, 0.7) , rgba(8, 0, 58, 0.7)) , url('https://studyinternational.com/wp-content/uploads/2021/04/1-2.jpg');
+    color: white;
+    display: flex;
+    justify-content: center;
+    /* height: 100vh; */
+    align-items: center;
+}
+
+.heroText{
+    text-align: center;
+    max-width: 800px;
+   
+}
+
+.heroText h1{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.heroText p{
+  max-width: 700px;
+  margin:16px auto 30px;
+}
