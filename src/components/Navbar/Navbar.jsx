@@ -1,11 +1,11 @@
-import { GraduationCap } from "lucide-react";
+import { GraduationCap, Menu } from "lucide-react";
 // import React from "react";
 import './Navbar.css'
 import { useEffect, useState } from "react";
 
 export default function Navbar() {
 
-
+  const [open , setOpen] =  useState(false)
   const [sticky , setSticky] = useState(false)
 
   useEffect(() =>{
@@ -13,6 +13,12 @@ export default function Navbar() {
         window.scrollY > 50 ? setSticky(true) : setSticky(false);
       })
   } , [])
+
+
+
+  const toggleMenu = () =>{
+    setOpen(!open)
+  } 
   return (
     <>
       <header  className={`header ${sticky ? "darkNav" : ""}`}>
@@ -20,7 +26,7 @@ export default function Navbar() {
           <GraduationCap size={30}  />
           <span>Edusity</span>
         </div>
-        <ul>
+            <ul className={open ? "navLink active" : "navLink"}>
           <li>Home</li>
           <li>Program</li>
           <li>About us</li>
@@ -28,6 +34,9 @@ export default function Navbar() {
           <li>Testimonials</li>
            <li><button className="button">Contact Us</button></li>
         </ul>
+        <div className="iconMenu" onClick={toggleMenu}>
+           <Menu />
+        </div>
       </header>
     </>
   );
